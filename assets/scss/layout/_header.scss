@@ -1,0 +1,133 @@
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 15;
+  .top-header {
+    padding: 12px;
+    background-color: #eeeeee;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .contact {
+        display: flex;
+        gap: 10px;
+        p {
+          margin: 0;
+          font-family: "Raleway", sans-serif;
+        }
+        i {
+          margin-right: 8px;
+          color: #909090;
+        }
+      }
+      .icons {
+        .fa-brands {
+          background-color: #909090;
+          padding: 7px;
+          border-radius: 50%;
+          color: white;
+          &:hover {
+            background-color: #26b7e7;
+            transition: 0.5s;
+          }
+        }
+      }
+    }
+  }
+  .bottom-header {
+    padding: 18px 0;
+    background-color: white;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      nav {
+        ul {
+          gap: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0;
+          li {
+            a {
+              color: black;
+              font-family: "Raleway", sans-serif;
+              font-weight: 700;
+              font-size: 14px;
+              &:hover {
+                color: #26b7e7;
+                transition: 0.5s;
+              }
+            }
+          }
+        }
+      }
+      .menuicon {
+        display: none;
+        .fa-bars {
+          margin: 8px;
+        }
+      }
+    }
+  }
+  .nav-mobile {
+    visibility: hidden;
+    background-color: black;
+    padding: 10px 0;
+    position: absolute;
+    transform: translateY(-400px);
+
+    hr {
+      color: white;
+    }
+    ul {
+      overflow: scroll;
+      height: 200px;
+      li {
+        a {
+          color: white;
+          font-family: "Raleway", sans-serif;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  header {
+    .top-header {
+      display: none !important;
+    }
+    .bottom-header {
+      background-color: #333333;
+      padding: 18px 0;
+      border-bottom: 2px solid red;
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        nav {
+          display: none;
+        }
+        .menuicon {
+          margin: 0;
+          display: block;
+          color: white;
+          border: 1px solid white;
+          padding: 3px 07px;
+          .fa-bars {
+            margin: 8px;
+          }
+        }
+      }
+    }
+    .nav-mobile.show {
+      visibility: visible;
+      position: relative;
+      transform: translateY(0);
+      transition: 1s;
+    }
+  }
+}

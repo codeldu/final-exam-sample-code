@@ -1,0 +1,66 @@
+.section-slide {
+  .carousel-inner {
+    .carousel-item {
+      .carousel-caption {
+        background-color: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        text-align: left;
+        position: absolute;
+        padding-top: 200px;
+        p {
+          color: white;
+          font-family: "Raleway", sans-serif;
+          font-size: 20px;
+          font-weight: 700;
+        }
+        h1 {
+          color: white;
+          font-size: 40px;
+          font-family: "Raleway", sans-serif;
+          font-weight: 700;
+        }
+        span {
+          color: white;
+          font-size: 18px;
+          font-family: "Raleway", sans-serif;
+          font-weight: 400;
+        }
+        .container {
+          .row {
+            .col {
+              color: black;
+              font-family: "Raleway", sans-serif;
+
+              .seebtn {
+                padding: 10px 25px;
+                border: none;
+                border-radius: 5px;
+                background-color: #26b7e7;
+                color: white;
+                &:hover {
+                  color: #26b7e7;
+                  background-color: white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .section-slide {
+    .carousel-inner {
+      .carousel-item {
+        .carousel-caption {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

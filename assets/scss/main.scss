@@ -1,0 +1,32 @@
+@import "./base/global";
+@import "./layout/header";
+@import "./layout/section-slide";
+@import "./layout/section-cards";
+@import "./layout/section-projects";
+@import "./layout/section-team";
+@import "./layout/footer";
+
+table {
+    width: 90%;
+    border: 2px solid black;
+    border-collapse: collapse;
+  }
+table tr {
+    border: 2px solid black;
+  }
+table tr th {
+
+    font-size: 16px;
+
+    border-right: 2px solid black;
+    padding: 10px 0;
+  }
+table tr td {
+    font-family: "Mulish", sans-serif;
+    font-size: 16px;
+    border-right: 2px solid black;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+

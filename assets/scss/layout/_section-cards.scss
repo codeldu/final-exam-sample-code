@@ -1,0 +1,59 @@
+.section-cards {
+  padding: 100px 0;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .row {
+      .col {
+        .card {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          .fav{
+            position: absolute;
+            top : 15px;
+            right : 15px;
+            cursor: pointer;
+          }
+          img {
+            margin: 40px;
+            border: 1px solid #26b7e7;
+            padding: 5px;
+          }
+          .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h5 {
+              font-size: 24px;
+              font-weight: 700;
+              font-family: "Raleway", sans-serif;
+            }
+            p {
+              text-align: center;
+              font-size: 14px;
+              font-weight: 400;
+              font-family: "Raleway", sans-serif;
+            }
+            span {
+              font-weight: 700;
+              font-size: 20px;
+              font-family: "Raleway", sans-serif;
+            }
+          }
+          &:hover {
+            img {
+              background-color: #26b7e7;
+              transition: 0.8s;
+            }
+          }
+        }
+      }
+    }
+  }
+}

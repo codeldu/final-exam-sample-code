@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "title": "WEB DEVELOPMENT",
+      "about": "Lorem Ipsum is a simply dummy texts of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
+      "price": 10,
+      "photo": "./assets/image/rocket.png",
+      "isFavorite": false,
+      "inBasket": null
+    },
+    {
+      "id": 3,
+      "title": "ONLINE Marketing",
+      "about": "Lorem Ipsum is a simply dummy texts of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
+      "price": 85,
+      "photo": "./assets/image/rocket.png",
+      "isFavorite": false,
+      "inBasket": 6
+    }
+  ]
+}
