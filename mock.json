@@ -16,7 +16,7 @@
       "price": 85,
       "photo": "./assets/image/rocket.png",
       "isFavorite": false,
-      "inBasket": 6
+      "inBasket": null
     }
   ]
 }
